@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="css/header.css">
+    <!-- link fontasome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- link sweper css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="container d-flex">
+                <a href="" class="nav-brand">Game Store</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="" class="nav-link active">ទំព័រដើម</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">ប្រភេទហ្គេម</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-nav">
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Free to play</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Action</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Strategy</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Sport & Racing</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Horror</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">On Mobile</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">បញ្ចុះតម្លៃ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">សម្ភារៈហ្គេម</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-nav">
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Gamming chair</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Mouse</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">keyboard</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Headphone</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">ដាក់លុយក្នុងហ្គេម</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">អំពីយើង</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">ទំនាក់ទំនង</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="box-search">
+                            <input class="search" type="search" name="search" id="search"  placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-hero-baner">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="image/HogWarts Legacy.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/Hyakkimaru Dororo.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/MSI MEG Series - The Revelation of Legend.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/SMV.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/Stormtrooper Star Wars Neon-.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/Titan fall 2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/Titan fall.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/Valorant Jett.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/Valorant.jpg" alt="">
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="section-1"></section>
+        <section class="section-2"></section>
+    </main>
+
+    <!-- link sweper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
